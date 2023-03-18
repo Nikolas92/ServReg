@@ -25,8 +25,6 @@ const contacts = {}; // key-value. key email, value is contact object, like name
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-
 app.get("/login", (req, res) => {
   res.send(
     "This authorization page send a POST request here {email, password}"
